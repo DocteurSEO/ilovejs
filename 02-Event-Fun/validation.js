@@ -10,15 +10,29 @@ convas.style.display = 'none'
 
 
 
-export function validation (){
+export function validation (createHTML, addToBody){
 
+   const div = createHTML('div', 'salut')
    
- if(document.querySelector('#sqr')  ){
+   if(div?.tagName === 'DIV' && div?.textContent == 'salut'){
     convas.style.display = 'block'
- }
- else{
-    document.body.innerHTML += '<iframe src="https://giphy.com/embed/Hwq45iwTIUBGw" width="280" height="161" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'
- }
+   }else{
+
+    document.body.innerHTML = `<p>Il est 1h du matin et je suis fatigué. Donc désolé si je fais de la ********** , <br>Bref, Ta fonction createHTML ne se comporte pas comme il faut... try Again </p>
+    
+     
+              
+              `
+   }
+
+ const elm = document.createElement('div');
+ elm.id='vivelejs'
+   addToBody (elm)
+  if(!document.querySelector("#vivelejs")){
+    document.body.innerHTML = `<p>Ta fonction addToBody ne se comporte pas comme il faut... try Again </p>`
+  }
+   
+  
 }
 
 
