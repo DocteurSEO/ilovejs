@@ -1,24 +1,4 @@
-// slice
-let arr = [1, 2, 3]
-console.log(arr.slice(0, 1)) // Résultat : 1
  
-
-// split 
-console.log("un-deux".split("-")) // Résultat : ["un", "deux"]
-
-
-// join 
-let result = ["un", "deux"]
-result.join("@")// Résultat : "un@deux"
-
-
-
-// splice
-let tableau = ["a", "b", "c"]
-console.log(tableau.splice(0, 1)) // Résultat : 'a'
-console.log(tableau ) //  ['b', 'c']
-
-
 // string literal
 let obj = {
     name: 'js'
@@ -83,6 +63,26 @@ ELEMENT_HTML.addEventListener("click", (e) => {
 
 })
 
+
+// slice
+let arr = [1, 2, 3]
+console.log(arr.slice(0, 1)) // Résultat : 1
+ 
+
+// split 
+console.log("un-deux".split("-")) // Résultat : ["un", "deux"]
+
+
+// join 
+let result = ["un", "deux"]
+result.join("@")// Résultat : "un@deux"
+
+
+
+// splice
+let tableau = ["a", "b", "c"]
+console.log(tableau.splice(0, 1)) // Résultat : 'a'
+console.log(tableau ) //  ['b', 'c']
 
 // fetch 
 fetch("url")
