@@ -10,8 +10,8 @@ convas.style.display = 'none'
 export function validation (){
    
   import("./script.js").then(({changeColor, addHTML, addTva})=>{
-    //changeColor()
-    //addHTML()
+    changeColor()
+    addHTML()
     const ttc = addTva(100)
     console.log(ttc)
     if(ttc === 120){
