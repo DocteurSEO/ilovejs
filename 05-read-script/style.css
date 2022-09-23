@@ -1,0 +1,80 @@
+.btn{
+    position: absolute;
+    border: none; 
+    
+}
+
+
+li{
+    list-style: none;
+    border-top : 1px solid black; 
+    position: relative;
+}
+
+li::first-letter{
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+
+ul{
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+
+.like{
+    bottom:-15px; 
+    left: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.active{
+ background-color: rgba(204, 58, 17, 0.998);
+ color: white; 
+ transform: scale(1.2);
+ border-radius: 3%;
+}
+
+.delete{
+    top:5px; 
+    right:5px;
+    background-color: orange;
+    color: white; 
+}
+
+.add{
+    position: fixed;
+    top: -40px; 
+    left:-40px;
+    width : 80px; 
+    height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.543);
+    transition: all 0.3s ease;
+}
+
+.add:hover{
+    transform: scale(1.5);
+    top: -10px; 
+    left:-10px;
+}
+
+.save{
+    bottom:-15px; 
+    right:5px; 
+   
+    background-color: #ff000000;
+    color: white;
+    font-size:30px;
+    border-radius: 3%;
+}
